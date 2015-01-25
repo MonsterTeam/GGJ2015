@@ -28,8 +28,21 @@ public:
 	//Global Variables
 	int stepCount;
 	bool canJump;
+	// VAR POWERS
+	bool isEarth;
+	bool isWind;
+	bool isWater;
+	bool isFire;
+	//POWERS
+	void earth(Ref *pSender);
+	void wind(Ref *pSender);
+	void water(Ref *pSender);
+	void fire(Ref *pSender);
 	//SPRITES
 	Sprite *background;
+	PhysicsBody *backgroundPhy;
+	Sprite *background2;
+	PhysicsBody *backgroundPhy2;
 	Sprite *power1;
 	Sprite *power2;
 	Sprite *power3;
